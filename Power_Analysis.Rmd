@@ -21,7 +21,7 @@ d = effect size calculated with help from http://www.socscistatistics.com/effect
   Cohen's d = (M2 - M1) ⁄ SDpooled
   SDpooled = √((SD12 + SD22) ⁄ 2)
   
-##For my data:  
+##For my predicted data:  
 Cohen's d = (40.47 - 33.05) ⁄ 5.458416 = 1.359369.
 
 ##Running the code:
@@ -36,6 +36,5 @@ It is possible that I could see an effect with an n=9. If I drop the power to 0.
 pwr.t.test(n = NULL, d = 1.359369, power = 0.5, sig.level = 0.05, type = "two.sample", alternative = "two.sided")
 ```
 
-##Conclusion: I should probably just analyze what I have. 
-If I drop the power to 0.5, then the n = 5.3. If I completed the analysis of the six remaining coverslips, I could have n= 8 and n=7 for MTMR2 and LVPG on Mtmr13-/-, respectively. Therefore, it is possible that I could get a significant result if I complete the analysis. 
+##Conclusion: It is possible to see a moderate to large effect with  n= ~8 
 
