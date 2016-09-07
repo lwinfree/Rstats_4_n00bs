@@ -1,0 +1,60 @@
+---
+title: "Basic Stats"
+author: "Lilly Winfree & Danielle Robinson"
+date: "September 6, 2016"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Let's learn how to read in data and then do some basic statistical analysis.
+Read in data:
+
+```{r}
+data<-read.table("example_lengths_for_R.csv", header=TRUE, sep=',')
+```
+We can look at the data quickly using summary(), nrow() to see the row numbers, colnames() for column names
+```{r}
+summary(data)
+nrow(data)
+colnames(data)
+```
+We can subset to different columns with $ and only see select rows with [:]
+```{r}
+data$coverlip.code[1:10]
+data$treatment[1:10]
+summary(data$values)
+summary(data$values[data$treatment=='Control'])
+```
+Let's plot our data!
+```{r}
+plot(data$treatment, data$values, xlab='treatment', ylab='length values')
+```
+
+
+Now let's look at how to do some basic stats:
+```{r}
+mean(data$values[data$treatment=='Treatment A'])
+mean(data$values[data$treatment=='Control'])
+mean(data$values[data$treatment=='Treatment B'])
+median(data$values[data$treatment=='Control'])
+var(data$values[data$treatment=='Control'])
+min(data$values[data$treatment=='Control'])
+max(data$values[data$treatment=='Control'])
+```
+notice how summary() gave us the same info as the above functions
+OK let's do a t-test now! We can use this to compare the means between 2 of the groups
+```{r}
+t.test(data$values[data$treatment=='Control'], data$values[data$treatment=='Treatment B'])
+```
+What does this tell us?
+How do we change the code to look at the other groups?
+
+We can also do an ANOVA with this data:
+```{r}
+results=aov(values ~ treatment, data=data)
+summary(results)
+```
+See ANOVA doc for more info on how an ANOVA works.
