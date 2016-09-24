@@ -17,19 +17,20 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r fig.width=5, fig.height=3,echo=FALSE}
 library(png)
 library(grid)
-img <- readPNG("~lillywinfree/Desktop/Github.png")
+img <- readPNG("~/Desktop/Rstats_4_n00bs-master/Github.png")
  grid.raster(img)
 ```
 - Click on "Clone or Download"
 - Click on "Download Zip"
 
 ## Why should you use R??
-- Collaborative
 - Free!
-    + unlike Prism, for example
-- Can be opened/used on any computer
-- You have a ton of control over what you want to do
-    + unlike Excel, for example
+    + unlike Prism, excel
+- Open Source 
+    + Tons of support, packages, tools
+    + Don't trap your file in proprietary format!
+- Great for stats
+    + Defaults not hidden, question assumptions
 
 ## Basics (1)
 - use # to comment
@@ -56,7 +57,7 @@ print(x)
 ```{r fig.width=8, fig.height=5,echo=FALSE}
 library(png)
 library(grid)
-img <- readPNG("~lillywinfree/Desktop/rstudio.png")
+img <- readPNG("~/Desktop/Rstats_4_n00bs-master/rstudio.png")
  grid.raster(img)
 ```
 
@@ -74,7 +75,7 @@ img <- readPNG("~lillywinfree/Desktop/rstudio.png")
 ```{r fig.width=8, fig.height=5,echo=FALSE}
 library(png)
 library(grid)
-img <- readPNG("~lillywinfree/Desktop/SHD.png")
+img <- readPNG("~/Desktop/Rstats_4_n00bs-master/SHD.png")
  grid.raster(img)
 ```
 
@@ -82,7 +83,7 @@ img <- readPNG("~lillywinfree/Desktop/SHD.png")
 ```{r fig.width=8, fig.height=5,echo=FALSE}
 library(png)
 library(grid)
-img <- readPNG("~lillywinfree/Desktop/WIS_OMSI.png")
+img <- readPNG("~/Desktop/Rstats_4_n00bs-master/WIS_OMSI.png")
  grid.raster(img)
 ```
 
