@@ -78,7 +78,6 @@ We can also do an ANOVA with this data using **aov** and plot the ANOVA informat
 ```{r}
 results<-aov(values ~ treatment, data=data1)
 summary(results)
-plot(results)
 ```
 
 See ANOVA doc for more info on how an ANOVA works.

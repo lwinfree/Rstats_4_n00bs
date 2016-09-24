@@ -31,7 +31,7 @@ img <- readPNG("~lillywinfree/Desktop/Github.png")
 - You have a ton of control over what you want to do
     + unlike Excel, for example
 
-## Basics
+## Basics (1)
 - use # to comment
 - "**<-**" assigns values to a variable
 ```{r}
@@ -42,27 +42,40 @@ x
 ```{r}
 print(x)
 ```
+## Basics (2)
 - help() and ?
-- name variables can't start w/ a number
+- in R console, use up arrow to re-type what you just wrote
+- variable names can't start with a number
+    + eg Data1 not 1Data
+- throwing errors is normal! You will create errors _a lot_
+
+### R is _stupid_ and only knows what _you_ input
+
+
+##This is what R Studio looks like:
+```{r fig.width=8, fig.height=5,echo=FALSE}
+library(png)
+library(grid)
+img <- readPNG("~lillywinfree/Desktop/rstudio.png")
+ grid.raster(img)
+```
 
 ## Resources
 - CRAN: https://cran.r-project.org
 - http://stackoverflow.com - like google for coding questions
 - R Markdown cheat sheets (rmarkdown.rstudio.com)
 - Ted Laderas' R bootcamp: https://github.com/laderast/r-bootcamp
-```{r fig.width=2, fig.height=4,echo=FALSE}
-library(png)
-library(grid)
-img <- readPNG("~lillywinfree/Desktop/Rlogo.png")
- grid.raster(img)
-```
+- Mozilla study groups: https://github.com/mozillascience/studyGroupLessons/issues
+- R Open Sci (https://ropensci.org)
+- R meetup groups (https://www.meetup.com/portland-r-user-group/)
+- additional plotting abilities with ggplot package (we're not going into this)
+
 
 ## Let's go!
 From the Github downloaded files, open:
 
 - "example_lengths_for_R.csv"
 - "BasicStatsCode.pdf"
-- "ANOVA.pdf"
 
 We'll start with "BasicStatsCode.pdf" 
 
