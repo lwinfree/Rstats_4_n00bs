@@ -2,7 +2,7 @@
 title: "R Stats 4 nOObs - PMCB Retreat 2016"
 author: "Danielle Robinson & Lilly Winfree"
 date: "September 24, 2016"
-output: beamer_presentation
+output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE}
@@ -70,6 +70,21 @@ img <- readPNG("~lillywinfree/Desktop/rstudio.png")
 - R meetup groups (https://www.meetup.com/portland-r-user-group/)
 - additional plotting abilities with ggplot package (we're not going into this)
 
+## Fun Events:
+```{r fig.width=8, fig.height=5,echo=FALSE}
+library(png)
+library(grid)
+img <- readPNG("~lillywinfree/Desktop/SHD.png")
+ grid.raster(img)
+```
+
+## Fun Events:
+```{r fig.width=8, fig.height=5,echo=FALSE}
+library(png)
+library(grid)
+img <- readPNG("~lillywinfree/Desktop/WIS_OMSI.png")
+ grid.raster(img)
+```
 
 ## Let's go!
 From the Github downloaded files, open:
