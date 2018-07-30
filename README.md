@@ -1,4 +1,5 @@
 # Rstats_4_n00bs
-DR and LW make a plan to teach the n00bs some simple analysis in R
 
-It's happening!
+This is a beginner-level workshop to teach simple analysis and stats in R by D. Robinson and L. Winfree. 
+The intended audience is grad students in biology/life sciences.
+All materials CC-BY 4.0
